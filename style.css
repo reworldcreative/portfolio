@@ -126,7 +126,7 @@ body {
     width: 180px;
     height: 58px;
     /* left: 70px; */
-    left: 11%;
+    left: 34%;
     border: 1px solid var(--main);
     transform: rotate(-4.74deg);
     border-radius: 50%;
@@ -293,7 +293,7 @@ body {
 .functional-bg {
     position: relative;
     top: -130px;
-    width: 895px;
+    /* width: 895px; */
 }
 
 .examples {
@@ -372,7 +372,7 @@ body {
 
 .examples-text-second {
     position: relative;
-    left: -150px;
+    left: -140px;
 }
 
 .example-img,
@@ -415,6 +415,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+.footer-text {
+    margin-bottom: 30px;
+}
+
 .footer-mail {
     text-decoration: none;
     color: var(--main);
@@ -436,6 +440,40 @@ body {
     color: var(--main);
 }
 
+@media only screen and (max-width: 1800px) {
+    .hero-title>.accent::after {
+        left: 39%;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .hero-title>.accent::after {
+        left: 19%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .avatar::before {
+        left: 50px;
+    }
+
+    .hero-title>.accent::after {
+        left: 22%;
+    }
+
+    .works-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .examples-text-wrap,
+    .examples-text-second {
+        width: 80%;
+    }
+
+}
+
 @media only screen and (max-width: 1300px) {
     .nav-item {
         margin-right: auto;
@@ -443,6 +481,30 @@ body {
 
     .navbar-brand {
         width: auto;
+    }
+
+    .hero-title>.accent::after {
+        content: none;
+    }
+
+    .examples-text-second {
+        left: 0;
+    }
+
+    .example-item::before {
+        content: none;
+    }
+
+    .example-item::after {
+        content: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .text-wrap {
+        position: absolute;
+        left: 39.5%;
     }
 }
 
@@ -464,6 +526,43 @@ body {
         left: 0;
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .works-item {
+        width: auto;
+    }
+
+    .avatar::before {
+        content: none;
+    }
+
+    .example-item-second::before {
+        content: none;
+    }
+
+    .nav-item {
+        margin-right: 0;
+    }
+
+    .examples-text-second {
+        left: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .functional-lines {
+        display: none !important;
+    }
+
+    .functional-bg {
+        top: 30px;
+    }
+}
+
 
 @media only screen and (max-width: 300px) {
 
